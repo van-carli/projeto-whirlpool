@@ -1,0 +1,891 @@
+{
+ "metrica": "importância das variáveis por redução de impureza, em cada área",
+ "areas": {
+  "oven_hmi": [
+   {
+    "variavel": "escala do componente",
+    "importancia": 0.18910338718249148
+   },
+   {
+    "variavel": "patamar do componente",
+    "importancia": 0.16844194480239114
+   },
+   {
+    "variavel": "reason_plate",
+    "importancia": 0.07308464213175087
+   },
+   {
+    "variavel": "reason_position_study",
+    "importancia": 0.06680179943243064
+   },
+   {
+    "variavel": "reason_air_path",
+    "importancia": 0.06360449855425701
+   },
+   {
+    "variavel": "perdas_none",
+    "importancia": 0.060891359307990466
+   },
+   {
+    "variavel": "run_case_pyro",
+    "importancia": 0.056131799006678175
+   },
+   {
+    "variavel": "reason_not_declared",
+    "importancia": 0.04147456803817174
+   },
+   {
+    "variavel": "perdas_simone",
+    "importancia": 0.03406493934189674
+   },
+   {
+    "variavel": "reason_heatsink_cover",
+    "importancia": 0.02616247304944318
+   },
+   {
+    "variavel": "run_case_broil qualitative",
+    "importancia": 0.02614676040437465
+   },
+   {
+    "variavel": "blower_direction_to front",
+    "importancia": 0.021827419867498338
+   },
+   {
+    "variavel": "housing_open",
+    "importancia": 0.021533153003312502
+   },
+   {
+    "variavel": "run_case_broil c2",
+    "importancia": 0.021117776641709336
+   },
+   {
+    "variavel": "housing_closed",
+    "importancia": 0.02086617261309435
+   },
+   {
+    "variavel": "deflector_hole_closed",
+    "importancia": 0.018916901099731875
+   },
+   {
+    "variavel": "blower_direction_to back",
+    "importancia": 0.01800571123187267
+   },
+   {
+    "variavel": "reason_other",
+    "importancia": 0.017564739897972994
+   },
+   {
+    "variavel": "deflector_hole_open",
+    "importancia": 0.015638273780483016
+   },
+   {
+    "variavel": "perdas_miro",
+    "importancia": 0.015149878469664915
+   },
+   {
+    "variavel": "material_coil_support_plastic",
+    "importancia": 0.004738308647533861
+   },
+   {
+    "variavel": "material_coil_support_aluminium",
+    "importancia": 0.004687123254854812
+   },
+   {
+    "variavel": "board_position_center",
+    "importancia": 0.004206457357358058
+   },
+   {
+    "variavel": "run_case_broil c1",
+    "importancia": 0.0039294758908642825
+   },
+   {
+    "variavel": "perdas_not_declared",
+    "importancia": 0.0032642567234405723
+   },
+   {
+    "variavel": "board_position_right",
+    "importancia": 0.0026461802687322475
+   }
+  ],
+  "ct_knobs": [
+   {
+    "variavel": "patamar do componente",
+    "importancia": 0.56286570478609
+   },
+   {
+    "variavel": "escala do componente",
+    "importancia": 0.07834156755434712
+   },
+   {
+    "variavel": "reason_plate",
+    "importancia": 0.048765239491619386
+   },
+   {
+    "variavel": "run_case_pyro",
+    "importancia": 0.04688368906999152
+   },
+   {
+    "variavel": "losses_no losses",
+    "importancia": 0.04236967182400907
+   },
+   {
+    "variavel": "reason_air_path",
+    "importancia": 0.027975709870344315
+   },
+   {
+    "variavel": "run_case_broil qualitative",
+    "importancia": 0.021377132322838444
+   },
+   {
+    "variavel": "reason_heatsink_cover",
+    "importancia": 0.021109301639456308
+   },
+   {
+    "variavel": "run_case_broil c2",
+    "importancia": 0.0199466663011637
+   },
+   {
+    "variavel": "housing_open",
+    "importancia": 0.015280946324777169
+   },
+   {
+    "variavel": "losses_broil c2 simone - front order",
+    "importancia": 0.013280772387176645
+   },
+   {
+    "variavel": "housing_closed",
+    "importancia": 0.013272862547773635
+   },
+   {
+    "variavel": "blower_direction_to front",
+    "importancia": 0.010856262387834997
+   },
+   {
+    "variavel": "reason_not_declared",
+    "importancia": 0.010460172167743231
+   },
+   {
+    "variavel": "losses_simone losses",
+    "importancia": 0.009968891359588391
+   },
+   {
+    "variavel": "blower_direction_to back",
+    "importancia": 0.009340636887941376
+   },
+   {
+    "variavel": "deflector_hole_closed",
+    "importancia": 0.00897486713445782
+   },
+   {
+    "variavel": "deflector_hole_open",
+    "importancia": 0.008318594957711785
+   },
+   {
+    "variavel": "losses_miro - front order",
+    "importancia": 0.007032872881880018
+   },
+   {
+    "variavel": "losses_simone modified - back order",
+    "importancia": 0.004513367036440939
+   },
+   {
+    "variavel": "losses_miro qualitative - back order",
+    "importancia": 0.0028527224453253645
+   },
+   {
+    "variavel": "reason_other",
+    "importancia": 0.002773170871914925
+   },
+   {
+    "variavel": "material_coil_support_aluminium",
+    "importancia": 0.0025137478735597144
+   },
+   {
+    "variavel": "material_coil_support_plastic",
+    "importancia": 0.002073804051667488
+   },
+   {
+    "variavel": "reason_position_study",
+    "importancia": 0.0017476741257886463
+   },
+   {
+    "variavel": "losses_simone",
+    "importancia": 0.0015896015896533246
+   },
+   {
+    "variavel": "run_case_broil c1",
+    "importancia": 0.0009306209783752593
+   },
+   {
+    "variavel": "losses_c1 simone - 240/145/180/180",
+    "importancia": 0.0008897212838355304
+   },
+   {
+    "variavel": "losses_qual simone - front order",
+    "importancia": 0.0007726964340912537
+   },
+   {
+    "variavel": "board_position_center",
+    "importancia": 0.0007533215855212753
+   },
+   {
+    "variavel": "board_position_right",
+    "importancia": 0.0007505979158393351
+   },
+   {
+    "variavel": "losses_broil c2 simone - 240/145/180/180",
+    "importancia": 0.0006953024915989577
+   },
+   {
+    "variavel": "losses_miro",
+    "importancia": 0.0005027102769805363
+   },
+   {
+    "variavel": "losses_broil miro - front order",
+    "importancia": 0.00021937914266256862
+   },
+   {
+    "variavel": "losses_miro qualitative - front order",
+    "importancia": 0.0
+   }
+  ],
+  "main_vent_sys": [
+   {
+    "variavel": "escala do componente",
+    "importancia": 0.47335976237351673
+   },
+   {
+    "variavel": "patamar do componente",
+    "importancia": 0.4085610895300739
+   },
+   {
+    "variavel": "losses_simone losses",
+    "importancia": 0.040367260948720424
+   },
+   {
+    "variavel": "run_case_pyro",
+    "importancia": 0.01733280476424349
+   },
+   {
+    "variavel": "reason_plate",
+    "importancia": 0.01552758781630446
+   },
+   {
+    "variavel": "losses_no losses",
+    "importancia": 0.015382075370235521
+   },
+   {
+    "variavel": "housing_closed",
+    "importancia": 0.0062073402786563545
+   },
+   {
+    "variavel": "housing_open",
+    "importancia": 0.005877917400249469
+   },
+   {
+    "variavel": "reason_air_path",
+    "importancia": 0.003922424188607446
+   },
+   {
+    "variavel": "losses_broil c2 simone - front order",
+    "importancia": 0.002973408453312675
+   },
+   {
+    "variavel": "blower_direction_to front",
+    "importancia": 0.001511824754276443
+   },
+   {
+    "variavel": "reason_not_declared",
+    "importancia": 0.0013558381087663551
+   },
+   {
+    "variavel": "blower_direction_to back",
+    "importancia": 0.0012246635695670526
+   },
+   {
+    "variavel": "board_position_center",
+    "importancia": 0.001062876804824048
+   },
+   {
+    "variavel": "reason_heatsink_cover",
+    "importancia": 0.0008020211996179439
+   },
+   {
+    "variavel": "reason_position_study",
+    "importancia": 0.000739731745564066
+   },
+   {
+    "variavel": "run_case_broil qualitative",
+    "importancia": 0.0006623533831817728
+   },
+   {
+    "variavel": "board_position_right",
+    "importancia": 0.000476937756343786
+   },
+   {
+    "variavel": "deflector_hole_open",
+    "importancia": 0.0004387492492574331
+   },
+   {
+    "variavel": "losses_miro",
+    "importancia": 0.00034356032511904716
+   },
+   {
+    "variavel": "deflector_hole_closed",
+    "importancia": 0.0003324452883388127
+   },
+   {
+    "variavel": "run_case_broil c2",
+    "importancia": 0.0002553299097926366
+   },
+   {
+    "variavel": "reason_other",
+    "importancia": 0.0002525740387408824
+   },
+   {
+    "variavel": "losses_miro - front order",
+    "importancia": 0.0001946219954725807
+   },
+   {
+    "variavel": "losses_broil c2 simone - 240/145/180/180",
+    "importancia": 0.00015807855735066248
+   },
+   {
+    "variavel": "losses_miro qualitative - back order",
+    "importancia": 0.0001449169000142579
+   },
+   {
+    "variavel": "losses_simone modified - back order",
+    "importancia": 0.0001160345222618269
+   },
+   {
+    "variavel": "losses_simone",
+    "importancia": 0.00010816821627820819
+   },
+   {
+    "variavel": "losses_qual simone - front order",
+    "importancia": 8.601698725241686e-05
+   },
+   {
+    "variavel": "material_coil_support_aluminium",
+    "importancia": 7.375152999295152e-05
+   },
+   {
+    "variavel": "material_coil_support_plastic",
+    "importancia": 7.07907793244324e-05
+   },
+   {
+    "variavel": "run_case_broil c1",
+    "importancia": 2.822102146222957e-05
+   },
+   {
+    "variavel": "losses_c1 simone - 240/145/180/180",
+    "importancia": 2.7335497945100224e-05
+   },
+   {
+    "variavel": "losses_broil miro - front order",
+    "importancia": 2.14867353346058e-05
+   },
+   {
+    "variavel": "losses_miro qualitative - front order",
+    "importancia": 0.0
+   }
+  ],
+  "ipc_cooling": [
+   {
+    "variavel": "patamar do componente",
+    "importancia": 0.7539130770834526
+   },
+   {
+    "variavel": "escala do componente",
+    "importancia": 0.11096278173397592
+   },
+   {
+    "variavel": "reason_not_declared",
+    "importancia": 0.044872720454273506
+   },
+   {
+    "variavel": "reason_air_path",
+    "importancia": 0.015788926540406863
+   },
+   {
+    "variavel": "reason_plate",
+    "importancia": 0.011399980845958935
+   },
+   {
+    "variavel": "perdas_none",
+    "importancia": 0.010151877390202275
+   },
+   {
+    "variavel": "run_case_pyro",
+    "importancia": 0.009144079753969055
+   },
+   {
+    "variavel": "deflector_hole_open",
+    "importancia": 0.006293952481356089
+   },
+   {
+    "variavel": "deflector_hole_closed",
+    "importancia": 0.004886395599533399
+   },
+   {
+    "variavel": "perdas_miro",
+    "importancia": 0.003630309696265253
+   },
+   {
+    "variavel": "perdas_simone",
+    "importancia": 0.0032610263040812014
+   },
+   {
+    "variavel": "housing_open",
+    "importancia": 0.002924262949866916
+   },
+   {
+    "variavel": "housing_closed",
+    "importancia": 0.0029141589310495305
+   },
+   {
+    "variavel": "blower_direction_to back",
+    "importancia": 0.002615251869918552
+   },
+   {
+    "variavel": "blower_direction_to front",
+    "importancia": 0.002449524951358287
+   },
+   {
+    "variavel": "material_coil_support_plastic",
+    "importancia": 0.0023430925749705154
+   },
+   {
+    "variavel": "material_coil_support_aluminium",
+    "importancia": 0.002327589041332617
+   },
+   {
+    "variavel": "run_case_broil c2",
+    "importancia": 0.002160639588771158
+   },
+   {
+    "variavel": "run_case_broil qualitative",
+    "importancia": 0.002125946870227666
+   },
+   {
+    "variavel": "perdas_not_declared",
+    "importancia": 0.001494153479756103
+   },
+   {
+    "variavel": "reason_heatsink_cover",
+    "importancia": 0.0011582905727632847
+   },
+   {
+    "variavel": "reason_position_study",
+    "importancia": 0.0010968760442019835
+   },
+   {
+    "variavel": "run_case_broil c1",
+    "importancia": 0.0008180979252501573
+   },
+   {
+    "variavel": "reason_other",
+    "importancia": 0.0005234005250038434
+   },
+   {
+    "variavel": "board_position_right",
+    "importancia": 0.00037941259641736876
+   },
+   {
+    "variavel": "board_position_center",
+    "importancia": 0.00036417419563687214
+   }
+  ],
+  "mainback": [
+   {
+    "variavel": "patamar do componente",
+    "importancia": 0.7483533303930789
+   },
+   {
+    "variavel": "escala do componente",
+    "importancia": 0.06683017088965731
+   },
+   {
+    "variavel": "reason_heatsink_cover",
+    "importancia": 0.041500727047688826
+   },
+   {
+    "variavel": "losses_no losses",
+    "importancia": 0.031535360178516596
+   },
+   {
+    "variavel": "run_case_pyro",
+    "importancia": 0.027385267069665518
+   },
+   {
+    "variavel": "housing_closed",
+    "importancia": 0.013942930531926478
+   },
+   {
+    "variavel": "reason_plate",
+    "importancia": 0.013636821440520868
+   },
+   {
+    "variavel": "reason_air_path",
+    "importancia": 0.01340914554542438
+   },
+   {
+    "variavel": "housing_open",
+    "importancia": 0.010824815068605984
+   },
+   {
+    "variavel": "losses_broil c2 simone - front order",
+    "importancia": 0.008553725833306715
+   },
+   {
+    "variavel": "blower_direction_to front",
+    "importancia": 0.0046405456843369745
+   },
+   {
+    "variavel": "blower_direction_to back",
+    "importancia": 0.0044584951899226295
+   },
+   {
+    "variavel": "run_case_broil qualitative",
+    "importancia": 0.0029046790884575072
+   },
+   {
+    "variavel": "reason_not_declared",
+    "importancia": 0.0027222649968382594
+   },
+   {
+    "variavel": "run_case_broil c2",
+    "importancia": 0.0018468250538831673
+   },
+   {
+    "variavel": "deflector_hole_open",
+    "importancia": 0.0018355964799341776
+   },
+   {
+    "variavel": "deflector_hole_closed",
+    "importancia": 0.001708692924587721
+   },
+   {
+    "variavel": "losses_simone losses",
+    "importancia": 0.0008649675952930023
+   },
+   {
+    "variavel": "reason_position_study",
+    "importancia": 0.0006056234246745833
+   },
+   {
+    "variavel": "losses_simone modified - back order",
+    "importancia": 0.000524906474311771
+   },
+   {
+    "variavel": "board_position_center",
+    "importancia": 0.00039849703620546586
+   },
+   {
+    "variavel": "board_position_right",
+    "importancia": 0.00036197109286963304
+   },
+   {
+    "variavel": "material_coil_support_aluminium",
+    "importancia": 0.00023094301899582296
+   },
+   {
+    "variavel": "material_coil_support_plastic",
+    "importancia": 0.00019166548593372494
+   },
+   {
+    "variavel": "losses_miro - front order",
+    "importancia": 0.00015462348067105689
+   },
+   {
+    "variavel": "losses_miro",
+    "importancia": 0.00014697721891218004
+   },
+   {
+    "variavel": "reason_other",
+    "importancia": 0.00012852634926064816
+   },
+   {
+    "variavel": "losses_simone",
+    "importancia": 9.560550766224856e-05
+   },
+   {
+    "variavel": "losses_miro qualitative - back order",
+    "importancia": 7.0700028521425e-05
+   },
+   {
+    "variavel": "losses_broil c2 simone - 240/145/180/180",
+    "importancia": 4.503437345143131e-05
+   },
+   {
+    "variavel": "run_case_broil c1",
+    "importancia": 2.8717530604515484e-05
+   },
+   {
+    "variavel": "losses_c1 simone - 240/145/180/180",
+    "importancia": 2.1890022653255525e-05
+   },
+   {
+    "variavel": "losses_qual simone - front order",
+    "importancia": 2.0545729464397846e-05
+   },
+   {
+    "variavel": "losses_broil miro - front order",
+    "importancia": 1.941221416272773e-05
+   },
+   {
+    "variavel": "losses_miro qualitative - front order",
+    "importancia": 0.0
+   }
+  ],
+  "ipc_comp": [
+   {
+    "variavel": "patamar do componente",
+    "importancia": 0.2834795451464939
+   },
+   {
+    "variavel": "escala do componente",
+    "importancia": 0.256781377209079
+   },
+   {
+    "variavel": "run_case_broil qualitative",
+    "importancia": 0.1395801619793655
+   },
+   {
+    "variavel": "perdas_simone",
+    "importancia": 0.0895672286855513
+   },
+   {
+    "variavel": "reason_not_declared",
+    "importancia": 0.08495601363395147
+   },
+   {
+    "variavel": "perdas_none",
+    "importancia": 0.022616023130622814
+   },
+   {
+    "variavel": "run_case_pyro",
+    "importancia": 0.02175072328678247
+   },
+   {
+    "variavel": "reason_position_study",
+    "importancia": 0.015559830033682021
+   },
+   {
+    "variavel": "reason_air_path",
+    "importancia": 0.012181535187902402
+   },
+   {
+    "variavel": "perdas_miro",
+    "importancia": 0.008920660672472883
+   },
+   {
+    "variavel": "perdas_not_declared",
+    "importancia": 0.008127317548129013
+   },
+   {
+    "variavel": "run_case_broil c2",
+    "importancia": 0.006890274451931625
+   },
+   {
+    "variavel": "reason_plate",
+    "importancia": 0.006733976987486716
+   },
+   {
+    "variavel": "deflector_hole_closed",
+    "importancia": 0.005665356587941888
+   },
+   {
+    "variavel": "deflector_hole_open",
+    "importancia": 0.005211615635339192
+   },
+   {
+    "variavel": "blower_direction_to front",
+    "importancia": 0.0038651079610791408
+   },
+   {
+    "variavel": "blower_direction_to back",
+    "importancia": 0.0038324304208296857
+   },
+   {
+    "variavel": "material_coil_support_plastic",
+    "importancia": 0.0035314789940362953
+   },
+   {
+    "variavel": "material_coil_support_aluminium",
+    "importancia": 0.003088781201548636
+   },
+   {
+    "variavel": "housing_open",
+    "importancia": 0.0029162250559887012
+   },
+   {
+    "variavel": "housing_closed",
+    "importancia": 0.002898979097562743
+   },
+   {
+    "variavel": "reason_other",
+    "importancia": 0.0027487250834927414
+   },
+   {
+    "variavel": "board_position_right",
+    "importancia": 0.002625796220544366
+   },
+   {
+    "variavel": "board_position_center",
+    "importancia": 0.002326802479323606
+   },
+   {
+    "variavel": "reason_heatsink_cover",
+    "importancia": 0.0020891385115479333
+   },
+   {
+    "variavel": "run_case_broil c1",
+    "importancia": 0.002054894797314043
+   }
+  ],
+  "coil_temps": [
+   {
+    "variavel": "patamar do componente",
+    "importancia": 0.2168373971719378
+   },
+   {
+    "variavel": "run_case_pyro",
+    "importancia": 0.18925354289078286
+   },
+   {
+    "variavel": "escala do componente",
+    "importancia": 0.18536676299419738
+   },
+   {
+    "variavel": "losses_no losses",
+    "importancia": 0.1699265218578186
+   },
+   {
+    "variavel": "run_case_broil c2",
+    "importancia": 0.14269339805734454
+   },
+   {
+    "variavel": "run_case_broil qualitative",
+    "importancia": 0.023041361943762214
+   },
+   {
+    "variavel": "material_coil_support_plastic",
+    "importancia": 0.014952842991311999
+   },
+   {
+    "variavel": "material_coil_support_aluminium",
+    "importancia": 0.012442951224363456
+   },
+   {
+    "variavel": "reason_plate",
+    "importancia": 0.007017092956175417
+   },
+   {
+    "variavel": "losses_c1 simone - 240/145/180/180",
+    "importancia": 0.00666939813403555
+   },
+   {
+    "variavel": "run_case_broil c1",
+    "importancia": 0.006659424794509085
+   },
+   {
+    "variavel": "housing_closed",
+    "importancia": 0.0065708141284192955
+   },
+   {
+    "variavel": "housing_open",
+    "importancia": 0.0053540845499590725
+   },
+   {
+    "variavel": "losses_broil c2 simone - front order",
+    "importancia": 0.001971787633579933
+   },
+   {
+    "variavel": "reason_heatsink_cover",
+    "importancia": 0.0019531816973223704
+   },
+   {
+    "variavel": "losses_simone modified - back order",
+    "importancia": 0.0011463995564041987
+   },
+   {
+    "variavel": "blower_direction_to back",
+    "importancia": 0.0007438961839018488
+   },
+   {
+    "variavel": "deflector_hole_open",
+    "importancia": 0.0007152758135406724
+   },
+   {
+    "variavel": "reason_air_path",
+    "importancia": 0.0006620631029514209
+   },
+   {
+    "variavel": "losses_miro - front order",
+    "importancia": 0.0006237993415826384
+   },
+   {
+    "variavel": "losses_miro",
+    "importancia": 0.0006186249563062592
+   },
+   {
+    "variavel": "blower_direction_to front",
+    "importancia": 0.0006056508135293077
+   },
+   {
+    "variavel": "deflector_hole_closed",
+    "importancia": 0.000565141757517475
+   },
+   {
+    "variavel": "losses_simone losses",
+    "importancia": 0.0005441777098565102
+   },
+   {
+    "variavel": "reason_other",
+    "importancia": 0.0005415594945537248
+   },
+   {
+    "variavel": "losses_simone",
+    "importancia": 0.0005152269453152455
+   },
+   {
+    "variavel": "losses_qual simone - front order",
+    "importancia": 0.0005018629783173
+   },
+   {
+    "variavel": "losses_miro qualitative - back order",
+    "importancia": 0.0003361004228209064
+   },
+   {
+    "variavel": "losses_broil c2 simone - 240/145/180/180",
+    "importancia": 0.0002930486255606267
+   },
+   {
+    "variavel": "losses_broil miro - front order",
+    "importancia": 0.00020727654711737625
+   },
+   {
+    "variavel": "reason_position_study",
+    "importancia": 0.0002010797700010679
+   },
+   {
+    "variavel": "board_position_right",
+    "importancia": 0.0001740917624034259
+   },
+   {
+    "variavel": "board_position_center",
+    "importancia": 0.00015021887274584793
+   },
+   {
+    "variavel": "reason_not_declared",
+    "importancia": 0.0001439423200545638
+   },
+   {
+    "variavel": "losses_miro qualitative - front order",
+    "importancia": 0.0
+   }
+  ]
+ }
+}

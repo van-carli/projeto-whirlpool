@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa Térmico do Fogão</title>
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/vendor/fontes/fontes.css">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <p class="kicker">Ignis · Divisão Fogões</p>
+  <h1>Mapa térmico do fogão</h1>
+  <p class="sub">Fogão de piso com cooktop de indução · onde fica cada área-chave do projeto VPD</p>
+</header>
+
+<div class="app">
+  <div class="stage">
+    <div class="toolbar">
+      <div class="tool">
+        <span class="rotulo">Explodir</span>
+        <input id="explode" type="range" min="0" max="100" value="50" aria-label="Separar as camadas">
+      </div>
+      <div class="tool">
+        <span class="rotulo">Console</span>
+        <div class="seg" id="segConsole">
+          <button type="button" aria-pressed="true" data-v="br">Frontal (BR)</button>
+          <button type="button" aria-pressed="false" data-v="us">Backguard (EUA)</button>
+        </div>
+      </div>
+      <div class="tool">
+        <label><input id="xray" type="checkbox"> Raio-X</label>
+      </div>
+      <button class="btn" id="reset" type="button">Resetar vista</button>
+    </div>
+    <div class="viewer" id="viewer">
+      <p class="hint nota">Arraste para girar · roda/pinça para zoom · botão direito para mover · clique numa área</p>
+    </div>
+  </div>
+
+  <aside>
+    <div class="list" id="list"></div>
+    <div class="detail" id="detail"></div>
+  </aside>
+</div>
+
+<script src="../assets/vendor/three/three.min.js"></script>
+<script src="../assets/vendor/three/OrbitControls.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/cena.js"></script>
+<script src="js/interface.js"></script>
+<script src="js/aplicacao.js"></script>
+</body>
+</html>

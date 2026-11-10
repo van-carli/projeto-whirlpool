@@ -1,0 +1,27 @@
+# ATENÇÃO! Não altere a lista abaixo, para que nenhuma fonte de dados seja incorporada ao seu repositório. 
+# Isso é um compromisso firmado entre o Inteli e seus parceiros de projetos acerca da proteção de dados.
+# 
+*.csv
+*.xls
+*.xlsx
+*.tsv
+*.db
+*.sql
+
+# Configuracao local de execucao do dashboard (porta e comando do servidor).
+# E por maquina: nao deve ser versionada.
+.claude/launch.json
+
+# Bytecode gerado ao importar os modulos Python do projeto.
+__pycache__/
+*.pyc
+
+# Chaves locais do Supabase e do mascaramento dos componentes (.env.exemplo mostra o formato).
+.env
+
+# Modelos finais gravados pelo exportar.py para a previsão sob demanda. As árvores são
+# ajustadas sobre as temperaturas da parceira e por isso não são versionadas.
+src/frontend/dados/modelos/
+
+# Arquivo de sistema do macOS, criado ao abrir pastas no Finder.
+.DS_Store

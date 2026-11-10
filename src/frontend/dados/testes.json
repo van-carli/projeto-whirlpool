@@ -1,0 +1,17 @@
+{
+ "ativo": "teste-1",
+ "testes": [
+  {
+   "id": "teste-1",
+   "nome": "Teste 1",
+   "descricao": "Dataset original da parceria Whirlpool x Inteli.",
+   "origem": "reais",
+   "pasta": ".",
+   "gerado_em": "2026-09-29",
+   "ensaios": 56,
+   "componentes": 73,
+   "areas_viaveis": 6,
+   "areas": 7
+  }
+ ]
+}

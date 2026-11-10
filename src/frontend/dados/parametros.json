@@ -1,0 +1,125 @@
+{
+ "gerado_em": "2026-09-29",
+ "dados": "reais",
+ "teste": {
+  "id": "teste-1",
+  "nome": "Teste 1",
+  "descricao": "Dataset original da parceria Whirlpool x Inteli.",
+  "origem": "reais"
+ },
+ "validacao_rotulo": "validação cruzada por configuração de ensaio",
+ "margem_kpi": 0.1,
+ "alvo_dentro_10": 70.0,
+ "max_falso_aprovado_pct": 5.0,
+ "folga_atencao_pct": 10.0,
+ "linhas": {
+  "br": {
+   "rotulo": "Brasil",
+   "disponivel": true
+  },
+  "mx": {
+   "rotulo": "México",
+   "disponivel": false,
+   "motivo": "nenhum ensaio da linha do México foi exportado dos notebooks"
+  }
+ },
+ "fonte": "notebooks/colabs_S4/modelagem.ipynb, Seção 23 · colabs_S3/preparacao_testes/metricas.ipynb",
+ "modelo": {
+  "descricao": "formulação entregue na Sprint 4, regra fixa, semente 42",
+  "nota": "Os números vêm de uma exportação com a regra fixa e uma semente (42); a documentação (Seção 4.3) apresenta a média de três sementes, por isso os valores podem diferir em décimos.",
+  "regra": {
+   "oven_hmi": {
+    "estimador": "rf",
+    "perdas": "agrupado"
+   },
+   "ct_knobs": {
+    "estimador": "rf",
+    "perdas": "detalhado"
+   },
+   "main_vent_sys": {
+    "estimador": "et+gb",
+    "perdas": "detalhado"
+   },
+   "ipc_cooling": {
+    "estimador": "rf",
+    "perdas": "agrupado"
+   },
+   "mainback": {
+    "estimador": "rf",
+    "perdas": "detalhado"
+   },
+   "ipc_comp": {
+    "estimador": "rf",
+    "perdas": "agrupado"
+   },
+   "coil_temps": {
+    "estimador": "rf+gb",
+    "perdas": "detalhado"
+   }
+  },
+  "versao": "S4-524fac74"
+ },
+ "configuracao": {
+  "campos": [
+   "blower_direction",
+   "housing",
+   "board_position",
+   "deflector_hole",
+   "material_coil_support",
+   "run_case",
+   "losses",
+   "reason"
+  ],
+  "opcoes": {
+   "blower_direction": [
+    "to back",
+    "to front"
+   ],
+   "housing": [
+    "closed",
+    "open"
+   ],
+   "board_position": [
+    "center",
+    "right"
+   ],
+   "deflector_hole": [
+    "closed",
+    "open"
+   ],
+   "material_coil_support": [
+    "aluminium",
+    "plastic"
+   ],
+   "run_case": [
+    "broil c1",
+    "broil c2",
+    "broil qualitative",
+    "pyro"
+   ],
+   "losses": [
+    "broil c2 simone - 240/145/180/180",
+    "broil c2 simone - front order",
+    "broil miro - front order",
+    "c1 simone - 240/145/180/180",
+    "miro",
+    "miro - front order",
+    "miro qualitative - back order",
+    "miro qualitative - front order",
+    "no losses",
+    "qual simone - front order",
+    "simone",
+    "simone losses",
+    "simone modified - back order"
+   ],
+   "reason": [
+    "air_path",
+    "heatsink_cover",
+    "not_declared",
+    "other",
+    "plate",
+    "position_study"
+   ]
+  }
+ }
+}

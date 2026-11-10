@@ -1,0 +1,126 @@
+/* Mapa térmico do fogão — folha de estilo.
+   Os tokens abaixo são os mesmos de src/frontend/css/base/tokens.py (Cores, Fontes,
+   Escala) e a tipografia segue src/frontend/css/base/tipografia.py. Esta página é
+   HTML puro, fora do Streamlit, então os tokens estão copiados à mão:
+   ao mudar tokens.py, atualize o bloco :root daqui. */
+/* Tokens: src/frontend/css/base/tokens.py (tema claro e tema escuro) */
+:root{
+  --ig-primaria:#0D436B; --ig-primaria-texto:#0D436B; --ig-primaria-sobre:#FFFFFF;
+  --ig-acento:#00A0DD; --ig-acento-claro:#EDF4FC;
+  --ig-texto:#484948; --ig-texto-apoio:#505863;
+  --ig-contorno:#DEE0E3; --ig-contorno-campo:#767777;
+  --ig-fundo:#FFFFFF; --ig-superficie:#FFFFFF; --ig-superficie-alt:#F5F6F7;
+  --ig-fonte-titulo:'Nunito Sans','Noto Sans',sans-serif;
+  --ig-fonte-corpo:'Open Sans','Noto Sans',sans-serif;
+  --ig-raio:4px; --ig-sombra:none; --ig-duracao:120ms;
+  --ig-e1:8px; --ig-e2:16px; --ig-e3:24px; --ig-e4:32px; --ig-max:1440px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ig-primaria:#1E6FB0; --ig-primaria-texto:#7FC1EF; --ig-acento-claro:#16303F;
+    --ig-texto:#F2F4F6; --ig-texto-apoio:#A8ADB4;
+    --ig-contorno:#2A3038; --ig-contorno-campo:#767777;
+    --ig-fundo:#15181C; --ig-superficie:#1B1F25; --ig-superficie-alt:#20252C;
+  }
+}
+:root[data-theme="dark"]{
+  --ig-primaria:#1E6FB0; --ig-primaria-texto:#7FC1EF; --ig-acento-claro:#16303F;
+  --ig-texto:#F2F4F6; --ig-texto-apoio:#A8ADB4;
+  --ig-contorno:#2A3038; --ig-contorno-campo:#767777;
+  --ig-fundo:#15181C; --ig-superficie:#1B1F25; --ig-superficie-alt:#20252C;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  background:var(--ig-fundo); color:var(--ig-texto);
+  font-family:var(--ig-fonte-corpo); font-size:16px; line-height:1.5;
+  padding-inline:var(--ig-e2); padding-block:var(--ig-e3);
+  display:flex; flex-direction:column;
+}
+:focus-visible{outline:2px solid var(--ig-primaria-texto); outline-offset:2px}
+::selection{background:var(--ig-acento-claro)}
+
+/* Tipografia: src/frontend/css/base/tipografia.py */
+.kicker{font-family:var(--ig-fonte-titulo); font-weight:700; font-size:16px; line-height:1.2;
+  letter-spacing:.05em; text-transform:uppercase; color:var(--ig-primaria-texto); margin:0}
+h1{font-family:var(--ig-fonte-titulo); font-weight:300; font-size:30px; line-height:1.2;
+  color:var(--ig-primaria-texto); margin:0; text-wrap:balance}
+.rotulo{font-family:var(--ig-fonte-corpo); font-weight:600; font-size:12px; line-height:1.3;
+  letter-spacing:.03em; text-transform:uppercase; color:var(--ig-texto-apoio)}
+.nota{font-family:var(--ig-fonte-corpo); font-size:12px; line-height:1.4; color:var(--ig-texto-apoio)}
+
+header{max-width:var(--ig-max); width:100%; margin-inline:auto; margin-bottom:var(--ig-e3);
+  padding-bottom:var(--ig-e3); border-bottom:1px solid var(--ig-contorno);
+  display:flex; flex-direction:column; gap:var(--ig-e1)}
+header .sub{max-width:72ch; margin:0; font-size:16px}
+
+.app{flex:1; min-height:0; max-width:var(--ig-max); width:100%; margin-inline:auto;
+  display:grid; grid-template-columns:minmax(0,1fr) 380px; gap:var(--ig-e2)}
+.stage{display:flex; flex-direction:column; gap:var(--ig-e2); min-height:0}
+.toolbar{display:flex; flex-wrap:wrap; gap:var(--ig-e1)}
+.tool{background:var(--ig-superficie); border:1px solid var(--ig-contorno);
+  border-radius:var(--ig-raio); box-shadow:var(--ig-sombra);
+  padding:var(--ig-e1) 12px; display:flex; align-items:center; gap:12px; min-height:40px}
+.tool label{display:flex; align-items:center; gap:var(--ig-e1); cursor:pointer; font-size:14px}
+.tool input[type=checkbox]{accent-color:var(--ig-primaria-texto); margin:0; width:16px; height:16px}
+.tool input[type=range]{width:120px; accent-color:var(--ig-primaria-texto)}
+.seg{display:flex; gap:4px}
+.seg button{border:1px solid transparent; background:transparent; color:var(--ig-texto-apoio);
+  font-family:var(--ig-fonte-corpo); font-size:14px; padding:4px 12px;
+  border-radius:var(--ig-raio); cursor:pointer; transition:background var(--ig-duracao)}
+.seg button:hover{background:var(--ig-superficie-alt); color:var(--ig-texto)}
+.seg button[aria-pressed="true"]{background:var(--ig-acento-claro); border-color:var(--ig-primaria-texto);
+  color:var(--ig-primaria-texto); font-weight:600}
+.btn{border:1px solid var(--ig-primaria-texto); background:transparent; color:var(--ig-primaria-texto);
+  font-family:var(--ig-fonte-corpo); font-weight:600; font-size:14px; min-height:40px;
+  padding:0 var(--ig-e2); border-radius:var(--ig-raio); cursor:pointer;
+  transition:background var(--ig-duracao)}
+.btn:hover{background:var(--ig-acento-claro)}
+
+.viewer{position:relative; flex:1; min-height:420px; border:1px solid var(--ig-contorno);
+  border-radius:var(--ig-raio); overflow:hidden; background:var(--ig-superficie-alt); touch-action:none}
+.viewer canvas{display:block; width:100%; height:100%; cursor:grab}
+.viewer canvas:active{cursor:grabbing}
+.hint{position:absolute; left:var(--ig-e2); bottom:var(--ig-e1); margin:0; pointer-events:none}
+
+aside{background:var(--ig-superficie); border:1px solid var(--ig-contorno);
+  border-radius:var(--ig-raio); box-shadow:var(--ig-sombra);
+  overflow:auto; min-height:0; display:flex; flex-direction:column}
+.list{display:flex; flex-direction:column; padding:var(--ig-e1)}
+.item{display:grid; grid-template-columns:12px 1fr auto; align-items:center; gap:12px;
+  text-align:left; width:100%; border:1px solid transparent; border-radius:var(--ig-raio);
+  background:transparent; color:var(--ig-texto); font-family:var(--ig-fonte-corpo);
+  font-size:14px; padding:var(--ig-e1) 12px; cursor:pointer;
+  transition:background var(--ig-duracao)}
+.item:hover{background:var(--ig-superficie-alt)}
+.item[aria-pressed="true"]{background:var(--ig-acento-claro); border-color:var(--ig-contorno)}
+.item i{width:12px; height:12px; border-radius:2px; background:var(--c)}
+.item b{font-weight:600}
+.item small{font-size:12px; color:var(--ig-texto-apoio)}
+
+.detail{border-top:1px solid var(--ig-contorno); padding:var(--ig-e3) var(--ig-e2);
+  display:flex; flex-direction:column; gap:var(--ig-e2)}
+.detail h2{font-family:var(--ig-fonte-corpo); font-weight:600; font-size:20px; line-height:1.2;
+  letter-spacing:.03em; text-transform:uppercase; color:var(--ig-texto); margin:0;
+  display:flex; align-items:center; gap:var(--ig-e1)}
+.detail h2 i{width:14px; height:14px; border-radius:2px; background:var(--c); flex:none}
+.detail h3{margin:0 0 4px; font-family:var(--ig-fonte-corpo); font-weight:600; font-size:12px;
+  line-height:1.3; letter-spacing:.03em; text-transform:uppercase; color:var(--ig-texto-apoio)}
+.detail p{margin:0; font-size:14px; line-height:1.5}
+.detail ul{margin:0; padding-left:var(--ig-e3); font-size:14px; line-height:1.45}
+.comps{margin:0; padding:0; list-style:none; columns:2 160px; column-gap:var(--ig-e2);
+  font-size:14px; line-height:1.45; font-variant-numeric:tabular-nums}
+.comps li{break-inside:avoid; padding:4px 0 4px 14px; position:relative}
+.comps li::before{content:""; position:absolute; left:0; top:.65em; width:6px; height:6px;
+  border-radius:2px; background:var(--c)}
+.count{font-weight:400; color:var(--ig-texto-apoio); letter-spacing:0}
+.src{font-size:12px; line-height:1.4; color:var(--ig-texto-apoio); margin:0}
+.err{position:absolute; inset:0; display:grid; place-items:center; color:var(--ig-texto-apoio);
+  padding:var(--ig-e3); text-align:center}
+@media (max-width:900px){
+  body{height:auto; display:block}
+  .app{grid-template-columns:1fr}
+  .viewer{flex:none; height:62vh; min-height:360px}
+  aside{overflow:visible}
+}
+@media (prefers-reduced-motion: reduce){ *{transition:none!important} }

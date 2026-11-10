@@ -1,0 +1,135 @@
+{
+ "aviso": "TESTES FICTÍCIOS, só para desenvolver a tela de Histórico. Não são ensaios reais e as pastas indicadas não existem: ao abrir um deles, o dashboard aplica só a 'configuracao' e segue mostrando os dados do teste real. Para remover: apague este arquivo e o bloco USAR_MOCK em js/telas/historico.js.",
+ "testes": [
+  {
+   "id": "teste-2",
+   "nome": "Teste 2",
+   "descricao": "Suporte de bobina em plástico, ventilação para trás.",
+   "origem": "simulados",
+   "pasta": "testes/teste-2",
+   "gerado_em": "2026-09-22",
+   "ensaios": 42,
+   "componentes": 73,
+   "areas_viaveis": 5,
+   "areas": 7,
+   "ficticio": true,
+   "configuracao": {
+    "modo": "tecnico",
+    "linha": "br",
+    "regioes": [
+     "coil_temps"
+    ],
+    "visao": {
+     "explodir": 40,
+     "mapaCalor": true,
+     "raioX": true,
+     "vista": "topo"
+    }
+   }
+  },
+  {
+   "id": "teste-3",
+   "nome": "Teste 3",
+   "descricao": "Placa de potência na posição direita, housing fechado.",
+   "origem": "simulados",
+   "pasta": "testes/teste-3",
+   "gerado_em": "2026-09-15",
+   "ensaios": 38,
+   "componentes": 73,
+   "areas_viaveis": 6,
+   "areas": 7,
+   "ficticio": true,
+   "configuracao": {
+    "modo": "naotecnico",
+    "linha": "br",
+    "regioes": [
+     "ipc_comp",
+     "ipc_cooling"
+    ],
+    "visao": {
+     "explodir": 70,
+     "mapaCalor": false,
+     "raioX": true,
+     "vista": "frente"
+    }
+   }
+  },
+  {
+   "id": "teste-4",
+   "nome": "Teste 4",
+   "descricao": "Furo defletor aberto na região do console, modo Pyro.",
+   "origem": "simulados",
+   "pasta": "testes/teste-4",
+   "gerado_em": "2026-08-30",
+   "ensaios": 24,
+   "componentes": 70,
+   "areas_viaveis": 7,
+   "areas": 7,
+   "ficticio": true,
+   "configuracao": {
+    "modo": "tecnico",
+    "linha": "br",
+    "regioes": [
+     "ct_knobs",
+     "oven_hmi"
+    ],
+    "visao": {
+     "explodir": 0,
+     "mapaCalor": true,
+     "raioX": false,
+     "vista": "frente"
+    }
+   }
+  },
+  {
+   "id": "teste-5",
+   "nome": "Teste 5",
+   "descricao": "Validação da linha México com perfil de perdas Simone.",
+   "origem": "simulados",
+   "pasta": "testes/teste-5",
+   "gerado_em": "2026-08-12",
+   "ensaios": 1,
+   "componentes": 68,
+   "areas_viaveis": 4,
+   "areas": 7,
+   "ficticio": true,
+   "configuracao": {
+    "modo": "naotecnico",
+    "linha": "br",
+    "regioes": [],
+    "visao": {
+     "explodir": 100,
+     "mapaCalor": false,
+     "raioX": false,
+     "vista": "traseira"
+    }
+   }
+  },
+  {
+   "id": "teste-6",
+   "nome": "Teste 6",
+   "descricao": "",
+   "origem": "simulados",
+   "pasta": "testes/teste-6",
+   "gerado_em": "2026-07-05",
+   "ensaios": 17,
+   "componentes": 73,
+   "areas_viaveis": 6,
+   "areas": 7,
+   "ficticio": true,
+   "configuracao": {
+    "modo": "tecnico",
+    "linha": "br",
+    "regioes": [
+     "main_vent_sys",
+     "mainback"
+    ],
+    "visao": {
+     "explodir": 20,
+     "mapaCalor": true,
+     "vista": "traseira"
+    }
+   }
+  }
+ ]
+}

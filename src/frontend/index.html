@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ignis · Predição térmica</title>
+<meta name="description" content="Dashboard Ignis: resultados do modelo de predição térmica de fogões, Whirlpool Divisão Fogões.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<!-- fontes, ícones e bibliotecas servidos daqui, sem CDN: abrir o dashboard não envia o IP a terceiros (tools/baixarVendor.py) -->
+<link rel="stylesheet" href="assets/vendor/fontes/fontes.css">
+<link rel="stylesheet" href="assets/vendor/phosphor/style.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/ignis.css">
+<script>
+  // preferências de exibição antes do primeiro paint, para a página não piscar
+  // (tema padrão claro; escuro, escala do texto e filtro de cor só se o usuário escolheu)
+  try {
+    var r = document.documentElement;
+    if (localStorage.getItem('ignis.tema') === 'dark') r.dataset.theme = 'dark';
+    var e = JSON.parse(localStorage.getItem('ignis.estado') || '{}');
+    if (e.escalaFonte && e.escalaFonte !== 1) r.style.setProperty('--ig-escala', String(e.escalaFonte));
+    if (e.daltonismo && e.daltonismo !== 'nenhum') r.dataset.daltonismo = e.daltonismo;
+  } catch (err) {}
+</script>
+</head>
+<body>
+<a class="ig-oculto" href="#principal" data-i18n="menu.irConteudo">Ir para o conteúdo</a>
+
+<header class="ig-topo" role="banner">
+  <div class="ig-marca">
+    <span class="ig-marca__nome">Ignis</span>
+    <span class="ig-marca__sub">Whirlpool · Divisão Fogões</span>
+  </div>
+  <div class="ig-topo__centro">
+    <div class="ig-seg" role="radiogroup" data-i18n-aria="modo.rotulo" aria-label="Modo de leitura" id="modo">
+      <button type="button" role="radio" aria-checked="true" data-modo="tecnico" data-i18n="modo.tecnico">Técnico</button>
+      <button type="button" role="radio" aria-checked="false" data-modo="naotecnico" data-i18n="modo.naotecnico">Não-técnico</button>
+    </div>
+  </div>
+  <div class="ig-topo__dir">
+    <label class="ig-topo__teste" for="seletorIdioma" id="campoIdioma"><span data-i18n="idioma.rotulo">Idioma</span>
+      <select id="seletorIdioma"><option value="pt">Português (Brasil)</option><option value="en">English</option><option value="es">Español</option></select>
+    </label>
+    <div class="ig-seg" role="radiogroup" data-i18n-aria="linha.rotulo" aria-label="Linha do produto" id="linha">
+      <button type="button" role="radio" aria-checked="true" data-linha="br" data-i18n="linha.br">Brasil</button>
+      <button type="button" role="radio" aria-checked="false" data-linha="mx" data-i18n="linha.mx">México</button>
+    </div>
+    <span class="ig-selo" id="seloDados"><i class="ph ph-database" aria-hidden="true"></i><span>Carregando dados</span></span>
+    <button type="button" class="ig-icone-botao" id="tema" data-i18n-aria="tema.aria" aria-label="Alternar tema escuro" aria-pressed="false" title="Tema escuro"><i class="ph ph-moon" aria-hidden="true"></i></button>
+    <div class="ig-config">
+      <button type="button" class="ig-icone-botao" id="abrirConfig" data-i18n-aria="cfg.abrir" aria-label="Configurações de exibição" aria-expanded="false" aria-controls="painelConfig"><i class="ph ph-gear" aria-hidden="true"></i></button>
+      <div class="ig-config__painel" id="painelConfig" role="group" data-i18n-aria="cfg.titulo" aria-label="Configurações de exibição" hidden>
+        <p class="ig-rotulo" data-i18n="cfg.titulo">Configurações de exibição</p>
+
+        <div class="ig-config__item">
+          <span class="ig-config__rotulo" id="cfgTemaRot" data-i18n="cfg.tema">Tema escuro</span>
+          <div class="ig-seg" role="radiogroup" aria-labelledby="cfgTemaRot" id="cfgTema">
+            <button type="button" role="radio" aria-checked="true" data-tema="light" data-i18n="cfg.temaClaro">Claro</button>
+            <button type="button" role="radio" aria-checked="false" data-tema="dark" data-i18n="cfg.temaEscuro">Escuro</button>
+          </div>
+        </div>
+
+        <div class="ig-config__item">
+          <span class="ig-config__rotulo" id="cfgFonteRot" data-i18n="cfg.fonte">Tamanho do texto</span>
+          <div class="ig-config__passos" role="group" aria-labelledby="cfgFonteRot">
+            <button type="button" class="ig-botao ig-botao--secundario ig-botao--pequeno" id="cfgFonteMenos" data-i18n-aria="cfg.fonteMenos" aria-label="Diminuir o texto">A−</button>
+            <output id="cfgFonteValor" for="cfgFonteMenos cfgFonteMais" aria-live="polite">100 %</output>
+            <button type="button" class="ig-botao ig-botao--secundario ig-botao--pequeno" id="cfgFonteMais" data-i18n-aria="cfg.fonteMais" aria-label="Aumentar o texto">A+</button>
+            <button type="button" class="ig-botao ig-botao--terciario ig-botao--pequeno" id="cfgFonteReset" data-i18n="cfg.restaurar">Restaurar</button>
+          </div>
+        </div>
+
+        <div class="ig-config__item">
+          <label class="ig-config__rotulo" for="cfgDaltonismo" data-i18n="cfg.daltonismo">Ajuste de cores para daltonismo</label>
+          <select id="cfgDaltonismo">
+            <option value="nenhum" data-i18n="cfg.dltNenhum">Nenhum (paleta padrão)</option>
+            <option value="verde-vermelho" data-i18n="cfg.dltVermelhoVerde">Protanopia e deuteranopia (eixo verde–vermelho)</option>
+            <option value="azul-amarelo" data-i18n="cfg.dltAzulAmarelo">Tritanopia (eixo azul–amarelo)</option>
+            <option value="sem-cor" data-i18n="cfg.dltSemCor">Acromatopsia (sem cor, só luminosidade)</option>
+          </select>
+          <p class="ig-nota" data-i18n="cfg.daltonismoNota">Escolhe cores que continuam separadas nessa visão, em vez de banir uma matiz: um azul pode ficar, desde que não se confunda com as outras cores da tela. Regiões, estados, mapa de calor e escalas dos gráficos mudam juntos, e todo estado também vem escrito. Só a opção sem cor deixa a tela inteira em tons de cinza.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ig-corpo">
+  <nav class="ig-menu" data-i18n-aria="menu.aria" aria-label="Menu lateral">
+    <div class="ig-menu__secao">
+      <p class="ig-menu__titulo" data-i18n="menu.telas">Telas</p>
+      <button type="button" class="ig-menu__item" data-tela="visaoGeral" aria-current="page"><i class="ph ph-cube" aria-hidden="true"></i><span data-i18n="menu.visaoGeral">Visão Geral</span></button>
+      <button type="button" class="ig-menu__item" data-tela="testes"><i class="ph ph-shield-check" aria-hidden="true"></i><span data-i18n="menu.testes">Testes</span></button>
+      <button type="button" class="ig-menu__item" data-tela="visualizacao"><i class="ph ph-chart-line-up" aria-hidden="true"></i><span data-i18n="menu.visualizacao">Visualização</span></button>
+      <button type="button" class="ig-menu__item" data-tela="historico"><i class="ph ph-clock-counter-clockwise" aria-hidden="true"></i><span data-i18n="menu.historico">Histórico</span></button>
+      <button type="button" class="ig-menu__item" data-tela="glossario"><i class="ph ph-book-open" aria-hidden="true"></i><span data-i18n="menu.glossario">Glossário</span></button>
+    </div>
+    <div class="ig-menu__secao">
+      <p class="ig-menu__titulo" data-i18n="menu.regioes">Regiões</p>
+      <div class="ig-campo">
+        <span class="ig-campo__rotulo ig-oculto" id="rotuloRegioes" data-i18n="menu.regioesAria">Regiões do recorte</span>
+        <div class="ig-regioes" id="regioes" role="group" aria-labelledby="rotuloRegioes"></div>
+        <div class="ig-linha-botoes">
+          <button type="button" class="ig-botao ig-botao--secundario ig-botao--pequeno" id="regioesNenhuma" data-i18n="menu.limpar">Limpar seleção</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="ig-principal" id="principal" tabindex="-1" aria-live="polite"></main>
+</div>
+
+<div class="ig-dica-3d" id="dica3d" role="tooltip" hidden></div>
+
+<script src="assets/vendor/three/three.min.js"></script>
+<script src="assets/vendor/three/OrbitControls.js"></script>
+<script src="assets/vendor/plotly/plotly-2.35.2.min.js" charset="utf-8"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

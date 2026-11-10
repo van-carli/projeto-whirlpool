@@ -1,0 +1,16 @@
+# Tema escuro (extensão: o guia Whirlpool pede base branca).
+# Fica em temas/ e não em .streamlit/: o Streamlit NÃO lê este arquivo sozinho.
+# Para aplicar, rode a partir de src/frontend/:  python rodar.py escuro
+[theme]
+base = "dark"
+primaryColor = "#1E6FB0"
+backgroundColor = "#15181C"
+secondaryBackgroundColor = "#20252C"  # = superficieAlt do tokens.py, como no tema claro
+textColor = "#F2F4F6"
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

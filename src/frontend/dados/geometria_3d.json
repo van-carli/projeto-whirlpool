@@ -1,0 +1,1404 @@
+{
+ "modelo": {
+  "largura_mm": 914,
+  "profundidade_mm": 660,
+  "altura_mm": 915,
+  "console_y": [
+   795,
+   900
+  ],
+  "porta": {
+   "largura": 560,
+   "altura": 520,
+   "z": 330
+  },
+  "kick_plate_y": 90,
+  "cavidade": {
+   "dims": [
+    600,
+    480,
+    560
+   ],
+   "centro": [
+    0,
+    490,
+    -20
+   ]
+  },
+  "cooktop": "inducao",
+  "zonas": [
+   {
+    "chave": "FL",
+    "x": -260,
+    "z": 120,
+    "raio_mm": 105,
+    "coil": "Coil FL",
+    "placa": "Aluminium Plate FL"
+   },
+   {
+    "chave": "FR",
+    "x": 260,
+    "z": 120,
+    "raio_mm": 105,
+    "coil": "Coil FR",
+    "placa": "Aluminium Plate FR"
+   },
+   {
+    "chave": "RL",
+    "x": -260,
+    "z": -120,
+    "raio_mm": 105,
+    "coil": "Coil RL",
+    "placa": "Aluminium Plate RL"
+   },
+   {
+    "chave": "RR",
+    "x": 260,
+    "z": -120,
+    "raio_mm": 105,
+    "coil": "Coil RR",
+    "placa": "Aluminium Plate RR"
+   }
+  ],
+  "fonte": "Fogão de piso por indução · Owner's Manual W11477340A",
+  "origem": "aproximada"
+ },
+ "regioes": {
+  "coil_temps": {
+   "rotulo": "Coil Temps",
+   "explode_mm": [
+    0,
+    300,
+    0
+   ],
+   "camera": "topo",
+   "suportes": []
+  },
+  "ct_knobs": {
+   "rotulo": "CT Knobs",
+   "explode_mm": [
+    0,
+    0,
+    260
+   ],
+   "camera": "frente",
+   "suportes": []
+  },
+  "ipc_comp": {
+   "rotulo": "IPC Comp",
+   "explode_mm": [
+    0,
+    180,
+    0
+   ],
+   "camera": "topo",
+   "suportes": [
+    {
+     "forma": "box",
+     "dims": [
+      360,
+      3,
+      200
+     ],
+     "pos": [
+      100,
+      795,
+      -40
+     ],
+     "cor": "placa"
+    },
+    {
+     "forma": "box",
+     "dims": [
+      170,
+      14,
+      70
+     ],
+     "pos": [
+      24,
+      818,
+      -70
+     ],
+     "cor": "metal"
+    }
+   ]
+  },
+  "ipc_cooling": {
+   "rotulo": "IPC Cooling",
+   "explode_mm": [
+    0,
+    180,
+    0
+   ],
+   "camera": "topo",
+   "suportes": []
+  },
+  "main_vent_sys": {
+   "rotulo": "Main Vent Sys",
+   "explode_mm": [
+    0,
+    90,
+    0
+   ],
+   "camera": "traseira",
+   "suportes": [
+    {
+     "forma": "box",
+     "dims": [
+      320,
+      26,
+      520
+     ],
+     "pos": [
+      0,
+      757,
+      0
+     ],
+     "cor": "ar"
+    }
+   ]
+  },
+  "mainback": {
+   "rotulo": "Mainback",
+   "explode_mm": [
+    0,
+    0,
+    -260
+   ],
+   "camera": "traseira",
+   "suportes": [
+    {
+     "forma": "box",
+     "dims": [
+      80,
+      40,
+      20
+     ],
+     "pos": [
+      -300,
+      340,
+      -318
+     ],
+     "cor": "metal"
+    },
+    {
+     "forma": "box",
+     "dims": [
+      60,
+      20,
+      25
+     ],
+     "pos": [
+      0,
+      775,
+      300
+     ],
+     "cor": "metal"
+    }
+   ]
+  },
+  "oven_hmi": {
+   "rotulo": "Oven HMI",
+   "explode_mm": [
+    0,
+    0,
+    260
+   ],
+   "camera": "frente",
+   "suportes": [
+    {
+     "forma": "box",
+     "dims": [
+      240,
+      70,
+      3
+     ],
+     "pos": [
+      0,
+      848,
+      298
+     ],
+     "cor": "placa"
+    }
+   ]
+  }
+ },
+ "cameras": {
+  "padrao": {
+   "pos": [
+    1500,
+    1150,
+    1900
+   ],
+   "alvo": [
+    0,
+    470,
+    0
+   ]
+  },
+  "frente": {
+   "pos": [
+    0,
+    760,
+    2300
+   ],
+   "alvo": [
+    0,
+    520,
+    0
+   ]
+  },
+  "topo": {
+   "pos": [
+    0,
+    2500,
+    250
+   ],
+   "alvo": [
+    0,
+    800,
+    0
+   ]
+  },
+  "traseira": {
+   "pos": [
+    0,
+    820,
+    -2300
+   ],
+   "alvo": [
+    0,
+    520,
+    0
+   ]
+  }
+ },
+ "componentes": {
+  "Door Lock Motor Ambient 1/2\" Below": {
+   "regiao": "mainback",
+   "no": "comp_door_lock_motor_ambient_1_2_below",
+   "posicao_mm": [
+    0,
+    738,
+    300
+   ],
+   "forma": "marker",
+   "dims": [
+    8
+   ],
+   "explode_mm": [
+    0,
+    0,
+    260
+   ]
+  },
+  "Door Lock Microswitch Body": {
+   "regiao": "mainback",
+   "no": "comp_door_lock_microswitch_body",
+   "posicao_mm": [
+    46,
+    782,
+    300
+   ],
+   "forma": "box",
+   "dims": [
+    18,
+    12,
+    12
+   ],
+   "explode_mm": [
+    0,
+    0,
+    260
+   ]
+  },
+  "Convect Motor Winding": {
+   "regiao": "mainback",
+   "no": "comp_convect_motor_winding",
+   "posicao_mm": [
+    0,
+    490,
+    -318
+   ],
+   "forma": "cyl",
+   "dims": [
+    36,
+    50
+   ],
+   "eixo": "z"
+  },
+  "Hot Surface Indicator Body": {
+   "regiao": "mainback",
+   "no": "comp_hot_surface_indicator_body",
+   "posicao_mm": [
+    -150,
+    830,
+    333
+   ],
+   "forma": "box",
+   "dims": [
+    14,
+    6,
+    4
+   ],
+   "explode_mm": [
+    0,
+    0,
+    260
+   ]
+  },
+  "Power On Indicator Body": {
+   "regiao": "mainback",
+   "no": "comp_power_on_indicator_body",
+   "posicao_mm": [
+    150,
+    830,
+    333
+   ],
+   "forma": "box",
+   "dims": [
+    14,
+    6,
+    4
+   ],
+   "explode_mm": [
+    0,
+    0,
+    260
+   ]
+  },
+  "Storage Drawer (Metal Above)": {
+   "regiao": "mainback",
+   "no": "comp_storage_drawer_metal_above",
+   "posicao_mm": [
+    0,
+    246,
+    -20
+   ],
+   "forma": "box",
+   "dims": [
+    600,
+    4,
+    520
+   ],
+   "explode_mm": [
+    0,
+    -120,
+    0
+   ]
+  },
+  "L2, Wire, Power Cord": {
+   "regiao": "mainback",
+   "no": "comp_l2_wire_power_cord",
+   "posicao_mm": [
+    380,
+    130,
+    -322
+   ],
+   "forma": "cyl",
+   "dims": [
+    5,
+    130
+   ],
+   "eixo": "y"
+  },
+  "Ambient Below Terminal Block": {
+   "regiao": "mainback",
+   "no": "comp_ambient_below_terminal_block",
+   "posicao_mm": [
+    -300,
+    300,
+    -318
+   ],
+   "forma": "marker",
+   "dims": [
+    9
+   ]
+  },
+  "ACU Ambient (Hill Only) Top": {
+   "regiao": "mainback",
+   "no": "comp_acu_ambient_hill_only_top",
+   "posicao_mm": [
+    300,
+    860,
+    -300
+   ],
+   "forma": "marker",
+   "dims": [
+    9
+   ]
+  },
+  "ACU K8 Housing / Double Line Break": {
+   "regiao": "mainback",
+   "no": "comp_acu_k8_housing_double_line_break",
+   "posicao_mm": [
+    300,
+    805,
+    -305
+   ],
+   "forma": "box",
+   "dims": [
+    120,
+    60,
+    28
+   ]
+  },
+  "Coil FR": {
+   "regiao": "coil_temps",
+   "no": "comp_coil_fr",
+   "posicao_mm": [
+    260,
+    882,
+    120
+   ],
+   "forma": "torus",
+   "dims": [
+    78,
+    12
+   ],
+   "eixo": "y",
+   "zona": "FR"
+  },
+  "Coil FL": {
+   "regiao": "coil_temps",
+   "no": "comp_coil_fl",
+   "posicao_mm": [
+    -260,
+    882,
+    120
+   ],
+   "forma": "torus",
+   "dims": [
+    78,
+    12
+   ],
+   "eixo": "y",
+   "zona": "FL"
+  },
+  "Coil RR": {
+   "regiao": "coil_temps",
+   "no": "comp_coil_rr",
+   "posicao_mm": [
+    260,
+    882,
+    -120
+   ],
+   "forma": "torus",
+   "dims": [
+    78,
+    12
+   ],
+   "eixo": "y",
+   "zona": "RR"
+  },
+  "Coil RL": {
+   "regiao": "coil_temps",
+   "no": "comp_coil_rl",
+   "posicao_mm": [
+    -260,
+    882,
+    -120
+   ],
+   "forma": "torus",
+   "dims": [
+    78,
+    12
+   ],
+   "eixo": "y",
+   "zona": "RL"
+  },
+  "Aluminium Plate FR": {
+   "regiao": "coil_temps",
+   "no": "comp_aluminium_plate_fr",
+   "posicao_mm": [
+    260,
+    864,
+    120
+   ],
+   "forma": "cyl",
+   "dims": [
+    100,
+    6
+   ],
+   "eixo": "y",
+   "zona": "FR"
+  },
+  "Aluminium Plate FL": {
+   "regiao": "coil_temps",
+   "no": "comp_aluminium_plate_fl",
+   "posicao_mm": [
+    -260,
+    864,
+    120
+   ],
+   "forma": "cyl",
+   "dims": [
+    100,
+    6
+   ],
+   "eixo": "y",
+   "zona": "FL"
+  },
+  "Aluminium Plate RR": {
+   "regiao": "coil_temps",
+   "no": "comp_aluminium_plate_rr",
+   "posicao_mm": [
+    260,
+    864,
+    -120
+   ],
+   "forma": "cyl",
+   "dims": [
+    100,
+    6
+   ],
+   "eixo": "y",
+   "zona": "RR"
+  },
+  "Aluminium Plate RL": {
+   "regiao": "coil_temps",
+   "no": "comp_aluminium_plate_rl",
+   "posicao_mm": [
+    -260,
+    864,
+    -120
+   ],
+   "forma": "cyl",
+   "dims": [
+    100,
+    6
+   ],
+   "eixo": "y",
+   "zona": "RL"
+  },
+  "AC Blower HES Connector": {
+   "regiao": "main_vent_sys",
+   "no": "comp_ac_blower_hes_connector",
+   "posicao_mm": [
+    250,
+    757,
+    -285
+   ],
+   "forma": "box",
+   "dims": [
+    16,
+    14,
+    20
+   ]
+  },
+  "AC Blower Windings": {
+   "regiao": "main_vent_sys",
+   "no": "comp_ac_blower_windings",
+   "posicao_mm": [
+    205,
+    757,
+    -285
+   ],
+   "forma": "cyl",
+   "dims": [
+    22,
+    60
+   ],
+   "eixo": "x"
+  },
+  "AC Blower Housing": {
+   "regiao": "main_vent_sys",
+   "no": "comp_ac_blower_housing",
+   "posicao_mm": [
+    0,
+    757,
+    -285
+   ],
+   "forma": "cyl",
+   "dims": [
+    24,
+    320
+   ],
+   "eixo": "x"
+  },
+  "Top Duct Inlet": {
+   "regiao": "main_vent_sys",
+   "no": "comp_top_duct_inlet",
+   "posicao_mm": [
+    0,
+    757,
+    -200
+   ],
+   "forma": "box",
+   "dims": [
+    300,
+    26,
+    80
+   ],
+   "ar": true,
+   "fluxo": "z"
+  },
+  "Turbo Duct / AC Blower Outlet": {
+   "regiao": "main_vent_sys",
+   "no": "comp_turbo_duct_ac_blower_outlet",
+   "posicao_mm": [
+    0,
+    762,
+    300
+   ],
+   "forma": "box",
+   "dims": [
+    400,
+    18,
+    50
+   ],
+   "ar": true,
+   "fluxo": "z"
+  },
+  "IPC Vertical Duct Inlet (Bottom)": {
+   "regiao": "ipc_cooling",
+   "no": "comp_ipc_vertical_duct_inlet_bottom",
+   "posicao_mm": [
+    -350,
+    703,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    70,
+    140,
+    90
+   ],
+   "ar": true,
+   "fluxo": "y"
+  },
+  "IPC Horizontal Duct Oulet (Inlet IPC Fan)": {
+   "regiao": "ipc_cooling",
+   "no": "comp_ipc_horizontal_duct_oulet_inlet_ipc_fan",
+   "posicao_mm": [
+    -278,
+    800,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    80,
+    50,
+    90
+   ],
+   "ar": true,
+   "fluxo": "x"
+  },
+  "IPC Housing Surface": {
+   "regiao": "ipc_cooling",
+   "no": "comp_ipc_housing_surface",
+   "posicao_mm": [
+    -226,
+    812,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    8,
+    70,
+    140
+   ],
+   "ar": true,
+   "casca": true
+  },
+  "IPC Housing Outlet": {
+   "regiao": "ipc_cooling",
+   "no": "comp_ipc_housing_outlet",
+   "posicao_mm": [
+    320,
+    812,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    60,
+    40,
+    80
+   ],
+   "ar": true,
+   "fluxo": "x"
+  },
+  "IPC Blower (Air Outlet Temp)": {
+   "regiao": "ipc_comp",
+   "no": "comp_ipc_blower_air_outlet_temp",
+   "posicao_mm": [
+    -116,
+    812,
+    -40
+   ],
+   "forma": "marker",
+   "dims": [
+    9
+   ]
+  },
+  "IPC Blower Housing": {
+   "regiao": "ipc_comp",
+   "no": "comp_ipc_blower_housing",
+   "posicao_mm": [
+    -170,
+    812,
+    -40
+   ],
+   "forma": "cyl",
+   "dims": [
+    44,
+    40
+   ],
+   "eixo": "z"
+  },
+  "Heat Sink (Point/Probe)": {
+   "regiao": "ipc_comp",
+   "no": "comp_heat_sink_point_probe",
+   "posicao_mm": [
+    24,
+    828,
+    -70
+   ],
+   "forma": "marker",
+   "dims": [
+    7
+   ]
+  },
+  "Bridge": {
+   "regiao": "ipc_comp",
+   "no": "comp_bridge",
+   "posicao_mm": [
+    150,
+    804,
+    22
+   ],
+   "forma": "box",
+   "dims": [
+    30,
+    14,
+    26
+   ]
+  },
+  "IGBT 1": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_1",
+   "posicao_mm": [
+    -58,
+    802,
+    -100
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 2": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_2",
+   "posicao_mm": [
+    -34,
+    802,
+    -100
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 3": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_3",
+   "posicao_mm": [
+    -10,
+    802,
+    -100
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 4": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_4",
+   "posicao_mm": [
+    14,
+    802,
+    -100
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 5": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_5",
+   "posicao_mm": [
+    38,
+    802,
+    -100
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 6": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_6",
+   "posicao_mm": [
+    62,
+    802,
+    -100
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 7": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_7",
+   "posicao_mm": [
+    86,
+    802,
+    -100
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 8": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_8",
+   "posicao_mm": [
+    110,
+    802,
+    -100
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 9": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_9",
+   "posicao_mm": [
+    -58,
+    802,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 10": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_10",
+   "posicao_mm": [
+    -34,
+    802,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 11": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_11",
+   "posicao_mm": [
+    -10,
+    802,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 12": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_12",
+   "posicao_mm": [
+    14,
+    802,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 13": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_13",
+   "posicao_mm": [
+    38,
+    802,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 14": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_14",
+   "posicao_mm": [
+    62,
+    802,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 15": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_15",
+   "posicao_mm": [
+    86,
+    802,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "IGBT 16": {
+   "regiao": "ipc_comp",
+   "no": "comp_igbt_16",
+   "posicao_mm": [
+    110,
+    802,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    12,
+    8,
+    16
+   ]
+  },
+  "DCBUS Cap 1": {
+   "regiao": "ipc_comp",
+   "no": "comp_dcbus_cap_1",
+   "posicao_mm": [
+    150,
+    815,
+    -40
+   ],
+   "forma": "cyl",
+   "dims": [
+    15,
+    36
+   ],
+   "eixo": "y"
+  },
+  "DCBUS Cap 2": {
+   "regiao": "ipc_comp",
+   "no": "comp_dcbus_cap_2",
+   "posicao_mm": [
+    186,
+    815,
+    -40
+   ],
+   "forma": "cyl",
+   "dims": [
+    15,
+    36
+   ],
+   "eixo": "y"
+  },
+  "DCBUS Cap 3": {
+   "regiao": "ipc_comp",
+   "no": "comp_dcbus_cap_3",
+   "posicao_mm": [
+    222,
+    815,
+    -40
+   ],
+   "forma": "cyl",
+   "dims": [
+    15,
+    36
+   ],
+   "eixo": "y"
+  },
+  "DCBUS Cap 4": {
+   "regiao": "ipc_comp",
+   "no": "comp_dcbus_cap_4",
+   "posicao_mm": [
+    258,
+    815,
+    -40
+   ],
+   "forma": "cyl",
+   "dims": [
+    15,
+    36
+   ],
+   "eixo": "y"
+  },
+  "CMC 1": {
+   "regiao": "ipc_comp",
+   "no": "comp_cmc_1",
+   "posicao_mm": [
+    196,
+    810,
+    22
+   ],
+   "forma": "box",
+   "dims": [
+    28,
+    26,
+    28
+   ]
+  },
+  "CMC 2": {
+   "regiao": "ipc_comp",
+   "no": "comp_cmc_2",
+   "posicao_mm": [
+    232,
+    810,
+    22
+   ],
+   "forma": "box",
+   "dims": [
+    28,
+    26,
+    28
+   ]
+  },
+  "DMC": {
+   "regiao": "ipc_comp",
+   "no": "comp_dmc",
+   "posicao_mm": [
+    268,
+    810,
+    22
+   ],
+   "forma": "box",
+   "dims": [
+    28,
+    26,
+    28
+   ]
+  },
+  "Reso Cap 1": {
+   "regiao": "ipc_comp",
+   "no": "comp_reso_cap_1",
+   "posicao_mm": [
+    -58,
+    808,
+    24
+   ],
+   "forma": "cyl",
+   "dims": [
+    9,
+    22
+   ],
+   "eixo": "y"
+  },
+  "Reso Cap 2": {
+   "regiao": "ipc_comp",
+   "no": "comp_reso_cap_2",
+   "posicao_mm": [
+    -34,
+    808,
+    24
+   ],
+   "forma": "cyl",
+   "dims": [
+    9,
+    22
+   ],
+   "eixo": "y"
+  },
+  "Reso Cap 3": {
+   "regiao": "ipc_comp",
+   "no": "comp_reso_cap_3",
+   "posicao_mm": [
+    -10,
+    808,
+    24
+   ],
+   "forma": "cyl",
+   "dims": [
+    9,
+    22
+   ],
+   "eixo": "y"
+  },
+  "Reso Cap 4": {
+   "regiao": "ipc_comp",
+   "no": "comp_reso_cap_4",
+   "posicao_mm": [
+    14,
+    808,
+    24
+   ],
+   "forma": "cyl",
+   "dims": [
+    9,
+    22
+   ],
+   "eixo": "y"
+  },
+  "Reso Cap 5": {
+   "regiao": "ipc_comp",
+   "no": "comp_reso_cap_5",
+   "posicao_mm": [
+    38,
+    808,
+    24
+   ],
+   "forma": "cyl",
+   "dims": [
+    9,
+    22
+   ],
+   "eixo": "y"
+  },
+  "Reso Cap 6": {
+   "regiao": "ipc_comp",
+   "no": "comp_reso_cap_6",
+   "posicao_mm": [
+    62,
+    808,
+    24
+   ],
+   "forma": "cyl",
+   "dims": [
+    9,
+    22
+   ],
+   "eixo": "y"
+  },
+  "Reso Cap 7": {
+   "regiao": "ipc_comp",
+   "no": "comp_reso_cap_7",
+   "posicao_mm": [
+    86,
+    808,
+    24
+   ],
+   "forma": "cyl",
+   "dims": [
+    9,
+    22
+   ],
+   "eixo": "y"
+  },
+  "Reso Cap 8": {
+   "regiao": "ipc_comp",
+   "no": "comp_reso_cap_8",
+   "posicao_mm": [
+    110,
+    808,
+    24
+   ],
+   "forma": "cyl",
+   "dims": [
+    9,
+    22
+   ],
+   "eixo": "y"
+  },
+  "Beatrice Micro": {
+   "regiao": "ipc_comp",
+   "no": "comp_beatrice_micro",
+   "posicao_mm": [
+    240,
+    802,
+    -100
+   ],
+   "forma": "box",
+   "dims": [
+    20,
+    4,
+    20
+   ]
+  },
+  "Micro (Below Board)": {
+   "regiao": "ipc_comp",
+   "no": "comp_micro_below_board",
+   "posicao_mm": [
+    60,
+    790,
+    -40
+   ],
+   "forma": "box",
+   "dims": [
+    18,
+    4,
+    18
+   ]
+  },
+  "A33/Bellatrix UI Wifi": {
+   "regiao": "oven_hmi",
+   "no": "comp_a33_bellatrix_ui_wifi",
+   "posicao_mm": [
+    70,
+    856,
+    295
+   ],
+   "forma": "box",
+   "dims": [
+    30,
+    14,
+    4
+   ]
+  },
+  "A33/Bellatrix Microchip": {
+   "regiao": "oven_hmi",
+   "no": "comp_a33_bellatrix_microchip",
+   "posicao_mm": [
+    -70,
+    856,
+    295
+   ],
+   "forma": "box",
+   "dims": [
+    22,
+    22,
+    4
+   ]
+  },
+  "A33/Bellatrix UI LCD Screen": {
+   "regiao": "oven_hmi",
+   "no": "comp_a33_bellatrix_ui_lcd_screen",
+   "posicao_mm": [
+    0,
+    848,
+    333
+   ],
+   "forma": "box",
+   "dims": [
+    170,
+    55,
+    4
+   ]
+  },
+  "Ambient Between Left Encoders": {
+   "regiao": "ct_knobs",
+   "no": "comp_ambient_between_left_encoders",
+   "posicao_mm": [
+    -305,
+    848,
+    300
+   ],
+   "forma": "marker",
+   "dims": [
+    9
+   ]
+  },
+  "Left Encoder": {
+   "regiao": "ct_knobs",
+   "no": "comp_left_encoder",
+   "posicao_mm": [
+    -395,
+    848,
+    340
+   ],
+   "forma": "cyl",
+   "dims": [
+    24,
+    26
+   ],
+   "eixo": "z"
+  },
+  "Left Center Encoder": {
+   "regiao": "ct_knobs",
+   "no": "comp_left_center_encoder",
+   "posicao_mm": [
+    -215,
+    848,
+    340
+   ],
+   "forma": "cyl",
+   "dims": [
+    24,
+    26
+   ],
+   "eixo": "z"
+  },
+  "Ambient Between Right Encoders": {
+   "regiao": "ct_knobs",
+   "no": "comp_ambient_between_right_encoders",
+   "posicao_mm": [
+    305,
+    848,
+    300
+   ],
+   "forma": "marker",
+   "dims": [
+    9
+   ]
+  },
+  "Right Center Encoder": {
+   "regiao": "ct_knobs",
+   "no": "comp_right_center_encoder",
+   "posicao_mm": [
+    215,
+    848,
+    340
+   ],
+   "forma": "cyl",
+   "dims": [
+    24,
+    26
+   ],
+   "eixo": "z"
+  },
+  "Right Encoder": {
+   "regiao": "ct_knobs",
+   "no": "comp_right_encoder",
+   "posicao_mm": [
+    395,
+    848,
+    340
+   ],
+   "forma": "cyl",
+   "dims": [
+    24,
+    26
+   ],
+   "eixo": "z"
+  }
+ }
+}

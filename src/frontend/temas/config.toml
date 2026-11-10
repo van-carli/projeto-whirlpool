@@ -1,0 +1,16 @@
+# Tema claro: base branca, como pede o guia Whirlpool.
+# Fica em temas/ e não em .streamlit/: o Streamlit NÃO lê este arquivo sozinho.
+# Para aplicar, rode a partir de src/frontend/:  python rodar.py
+[theme]
+base = "light"
+primaryColor = "#0D436B"              # Accomplished Blue
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F6F7"  # Extra Light Gray
+textColor = "#484948"                 # Black
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"               # sem o botão "Deploy" e o menu de desenvolvedor
+
+[browser]
+gatherUsageStats = false

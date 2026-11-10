@@ -1,0 +1,386 @@
+/* Tokens do Ignis. GERADO por css/gerarTokens.py a partir de css/base/tokens.py.
+   Não edite à mão: mude o Python e rode `python css/gerarTokens.py`.
+   Nenhuma cor, fonte ou medida literal deve aparecer fora deste arquivo. */
+
+:root {
+  /* marca (Whirlpool) */
+  --ig-primaria: #0D436B;
+  --ig-primaria-texto: #0D436B;
+  --ig-primaria-sobre: #FFFFFF;
+  --ig-primaria-hover: #0A3557;
+  --ig-acento: #0077A5;
+  --ig-acento-claro: #EDF4FC;
+  /* faixa opcional do cabeçalho */
+  --ig-faixa: #0D436B;
+  --ig-faixa-texto: #FFFFFF;
+  --ig-faixa-apoio: #EDF4FC;
+  --ig-faixa-regua: #0D436B;
+  /* neutros */
+  --ig-texto: #484948;
+  --ig-texto-apoio: #505863;
+  --ig-contorno: #DEE0E3;
+  --ig-contorno-campo: #767777;
+  --ig-fundo: #FFFFFF;
+  --ig-superficie: #FFFFFF;
+  --ig-superficie-alt: #F5F6F7;
+  /* estados (exceção funcional documentada) */
+  --ig-seguro: #0E7C66;
+  --ig-seguro-texto: #0A5A4A;
+  --ig-seguro-borda: #0E7C66;
+  --ig-seguro-fundo: #F6F9ED;
+  --ig-atencao: #B26A00;
+  --ig-atencao-texto: #804C00;
+  --ig-atencao-borda: #C58F40;
+  --ig-atencao-fundo: #FDF7E4;
+  --ig-critico: #B3251F;
+  --ig-critico-texto: #7E1915;
+  --ig-critico-borda: #BD413B;
+  --ig-critico-fundo: #FCF6ED;
+  --ig-neutro: #767777;
+  --ig-neutro-texto: #484948;
+  --ig-neutro-borda: #DEE0E3;
+  --ig-neutro-fundo: #F5F6F7;
+  /* escalas de dado */
+  --ig-calor-0: #000004;
+  --ig-calor-1: #320A5E;
+  --ig-calor-2: #781C6D;
+  --ig-calor-3: #BC3754;
+  --ig-calor-4: #ED6925;
+  --ig-calor-5: #FCFFA4;
+  --ig-div-0: #0E7C66;
+  --ig-div-1: #6FA79A;
+  --ig-div-2: #C7CDD4;
+  --ig-div-3: #C97B76;
+  --ig-div-4: #B3251F;
+  /* mapa de calor do 3D: azul intenso (frio) a vermelho intenso (quente) */
+  --ig-temp-0: #0B3C8C;
+  --ig-temp-1: #3F7BD1;
+  --ig-temp-2: #E6E3DE;
+  --ig-temp-3: #D2553B;
+  --ig-temp-4: #A5140F;
+  /* identidade das sete regiões térmicas */
+  --ig-regiao-coil-temps: #B3251F;
+  --ig-regiao-ct-knobs: #B26A00;
+  --ig-regiao-ipc-comp: #0E7C66;
+  --ig-regiao-ipc-cooling: #0077A5;
+  --ig-regiao-main-vent-sys: #0D436B;
+  --ig-regiao-mainback: #781C6D;
+  --ig-regiao-oven-hmi: #505863;
+  /* cena 3D */
+  --ig-cena-fundo: #F5F6F7;
+  --ig-cena-chao: #E9EBEE;
+  --ig-cena-aco: #DEE0E3;
+  --ig-cena-aco-escuro: #767777;
+  /* tipografia */
+  --ig-fonte-titulo: 'Nunito Sans', 'Noto Sans', sans-serif;
+  --ig-fonte-corpo: 'Open Sans', 'Noto Sans', sans-serif;
+  --ig-icone: calc(20px * var(--ig-escala));
+  /* medidas */
+  --ig-raio: 4px;
+  --ig-sombra: none;
+  --ig-menu: 288px;
+  --ig-max: 1440px;
+  --ig-topo: calc(56px * var(--ig-escala));
+  --ig-duracao: 120ms;
+  --ig-escala: 1;
+  --ig-e1: 8px;
+  --ig-e2: 16px;
+  --ig-e3: 24px;
+  --ig-e4: 32px;
+  /* movimento */
+  --ig-duracao-entrada: 200ms;
+  --ig-atraso-sequencia: 40ms;
+  --ig-curva: cubic-bezier(0.2, 0, 0, 1);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  /* marca (Whirlpool) */
+  --ig-primaria: #1E6FB0;
+  --ig-primaria-texto: #7FC1EF;
+  --ig-primaria-sobre: #FFFFFF;
+  --ig-primaria-hover: #2A7AB8;
+  --ig-acento: #00A0DD;
+  --ig-acento-claro: #16303F;
+  /* faixa opcional do cabeçalho */
+  --ig-faixa: #0D436B;
+  --ig-faixa-texto: #FFFFFF;
+  --ig-faixa-apoio: #EDF4FC;
+  --ig-faixa-regua: #00A0DD;
+  /* neutros */
+  --ig-texto: #F2F4F6;
+  --ig-texto-apoio: #A8ADB4;
+  --ig-contorno: #2A3038;
+  --ig-contorno-campo: #767777;
+  --ig-fundo: #15181C;
+  --ig-superficie: #1B1F25;
+  --ig-superficie-alt: #20252C;
+  /* estados (exceção funcional documentada) */
+  --ig-seguro: #3FBF9E;
+  --ig-seguro-texto: #5FD6B6;
+  --ig-seguro-borda: #3FBF9E;
+  --ig-seguro-fundo: #11302A;
+  --ig-atencao: #E0A13A;
+  --ig-atencao-texto: #F0BC64;
+  --ig-atencao-borda: #C58F40;
+  --ig-atencao-fundo: #33260F;
+  --ig-critico: #E06A62;
+  --ig-critico-texto: #F08981;
+  --ig-critico-borda: #BD413B;
+  --ig-critico-fundo: #341A19;
+  --ig-neutro: #A8ADB4;
+  --ig-neutro-texto: #C7CCD2;
+  --ig-neutro-borda: #333B45;
+  --ig-neutro-fundo: #22272E;
+  /* escalas de dado */
+  --ig-calor-0: #320A5E;
+  --ig-calor-1: #781C6D;
+  --ig-calor-2: #BC3754;
+  --ig-calor-3: #ED6925;
+  --ig-calor-4: #FCFFA4;
+  --ig-div-0: #3FBF9E;
+  --ig-div-1: #6FA79A;
+  --ig-div-2: #3A424B;
+  --ig-div-3: #C97B76;
+  --ig-div-4: #E06A62;
+  /* mapa de calor do 3D: azul intenso (frio) a vermelho intenso (quente) */
+  --ig-temp-0: #2F6FE0;
+  --ig-temp-1: #5AA9F5;
+  --ig-temp-2: #3A424B;
+  --ig-temp-3: #E0745F;
+  --ig-temp-4: #F2352B;
+  /* identidade das sete regiões térmicas */
+  --ig-regiao-coil-temps: #E06A62;
+  --ig-regiao-ct-knobs: #E0A13A;
+  --ig-regiao-ipc-comp: #3FBF9E;
+  --ig-regiao-ipc-cooling: #00A0DD;
+  --ig-regiao-main-vent-sys: #7FC1EF;
+  --ig-regiao-mainback: #B07BC9;
+  --ig-regiao-oven-hmi: #C7CCD2;
+  /* cena 3D */
+  --ig-cena-fundo: #20252C;
+  --ig-cena-chao: #262C34;
+  --ig-cena-aco: #7B838C;
+  --ig-cena-aco-escuro: #3A424B;
+  /* tipografia */
+  --ig-fonte-titulo: 'Nunito Sans', 'Noto Sans', sans-serif;
+  --ig-fonte-corpo: 'Open Sans', 'Noto Sans', sans-serif;
+  --ig-icone: calc(20px * var(--ig-escala));
+  /* medidas */
+  --ig-raio: 4px;
+  --ig-sombra: none;
+  --ig-menu: 288px;
+  --ig-max: 1440px;
+  --ig-topo: calc(56px * var(--ig-escala));
+  --ig-duracao: 120ms;
+  --ig-escala: 1;
+  --ig-e1: 8px;
+  --ig-e2: 16px;
+  --ig-e3: 24px;
+  --ig-e4: 32px;
+  /* movimento */
+  --ig-duracao-entrada: 200ms;
+  --ig-atraso-sequencia: 40ms;
+  --ig-curva: cubic-bezier(0.2, 0, 0, 1);
+  color-scheme: dark;
+}
+
+/* ---------- ajustes de cor para daltonismo ----------
+   Trocam tudo que carrega sentido pela cor: estados (ícone, texto e faixa),
+   identidade das regiões e escalas de dado. Escolhem cores que continuam
+   separadas na visão simulada, em vez de banir uma matiz; só o modo sem cor
+   deixa a tela em tons de cinza. Verificados em tools/contraste.py. */
+
+:root:not([data-theme="dark"])[data-daltonismo="verde-vermelho"] {
+  --ig-atencao: #A8760F;
+  --ig-atencao-borda: #A8760F;
+  --ig-atencao-fundo: #F0EBE0;
+  --ig-atencao-texto: #8C630D;
+  --ig-critico: #6B0D08;
+  --ig-critico-borda: #6B0D08;
+  --ig-critico-fundo: #EDDAD9;
+  --ig-critico-texto: #6D0D08;
+  --ig-div-0: #1A5FA8;
+  --ig-div-1: #B5BFD4;
+  --ig-div-2: #F5F6F7;
+  --ig-div-3: #C0B5B6;
+  --ig-div-4: #6B0D08;
+  --ig-regiao-coil-temps: #CD751D;
+  --ig-regiao-ct-knobs: #62300E;
+  --ig-regiao-ipc-comp: #279B78;
+  --ig-regiao-ipc-cooling: #1D87CD;
+  --ig-regiao-main-vent-sys: #1D1DCD;
+  --ig-regiao-mainback: #0E0E62;
+  --ig-regiao-oven-hmi: #1F4251;
+  --ig-seguro: #1A5FA8;
+  --ig-seguro-borda: #1A5FA8;
+  --ig-seguro-fundo: #D9E3ED;
+  --ig-seguro-texto: #1A5FA8;
+}
+
+:root[data-theme="dark"][data-daltonismo="verde-vermelho"] {
+  --ig-atencao: #E0A13A;
+  --ig-atencao-borda: #E0A13A;
+  --ig-atencao-fundo: #423724;
+  --ig-atencao-texto: #E0A039;
+  --ig-critico: #D4655C;
+  --ig-critico-borda: #D4655C;
+  --ig-critico-fundo: #3F2422;
+  --ig-critico-texto: #D9766E;
+  --ig-div-0: #6FB4F2;
+  --ig-div-1: #5386B4;
+  --ig-div-2: #22272E;
+  --ig-div-3: #9D4E49;
+  --ig-div-4: #D4655C;
+  --ig-regiao-coil-temps: #E04E29;
+  --ig-regiao-ct-knobs: #E0E029;
+  --ig-regiao-ipc-comp: #C2E79D;
+  --ig-regiao-ipc-cooling: #94F0F0;
+  --ig-regiao-main-vent-sys: #6B87C7;
+  --ig-regiao-mainback: #7A5CEE;
+  --ig-regiao-oven-hmi: #BC4E64;
+  --ig-seguro: #6FB4F2;
+  --ig-seguro-borda: #6FB4F2;
+  --ig-seguro-fundo: #243442;
+  --ig-seguro-texto: #6EB3F2;
+}
+
+:root:not([data-theme="dark"])[data-daltonismo="azul-amarelo"] {
+  --ig-atencao: #8A5A00;
+  --ig-atencao-borda: #8A5A00;
+  --ig-atencao-fundo: #EDE6D9;
+  --ig-atencao-texto: #8A5A00;
+  --ig-critico: #C1152C;
+  --ig-critico-borda: #C1152C;
+  --ig-critico-fundo: #EDD9DC;
+  --ig-critico-texto: #C1152C;
+  --ig-div-0: #0E7C66;
+  --ig-div-1: #B4C6C1;
+  --ig-div-2: #F5F6F7;
+  --ig-div-3: #DDB5B8;
+  --ig-div-4: #C1152C;
+  --ig-regiao-coil-temps: #CD1D1D;
+  --ig-regiao-ct-knobs: #8F9B27;
+  --ig-regiao-ipc-comp: #18AA18;
+  --ig-regiao-ipc-cooling: #16165A;
+  --ig-regiao-main-vent-sys: #981DCD;
+  --ig-regiao-mainback: #620E0E;
+  --ig-regiao-oven-hmi: #CD1DAA;
+  --ig-seguro: #0E7C66;
+  --ig-seguro-borda: #0E7C66;
+  --ig-seguro-fundo: #D9EDE9;
+  --ig-seguro-texto: #0D735E;
+}
+
+:root[data-theme="dark"][data-daltonismo="azul-amarelo"] {
+  --ig-atencao: #D9A24A;
+  --ig-atencao-borda: #D9A24A;
+  --ig-atencao-fundo: #423724;
+  --ig-atencao-texto: #D9A24A;
+  --ig-critico: #F2554B;
+  --ig-critico-borda: #F2554B;
+  --ig-critico-fundo: #422624;
+  --ig-critico-texto: #F46B62;
+  --ig-div-0: #57D46B;
+  --ig-div-1: #439D53;
+  --ig-div-2: #22272E;
+  --ig-div-3: #B3433E;
+  --ig-div-4: #F2554B;
+  --ig-regiao-coil-temps: #E02929;
+  --ig-regiao-ct-knobs: #D4F094;
+  --ig-regiao-ipc-comp: #70EBEB;
+  --ig-regiao-ipc-cooling: #4E6FBC;
+  --ig-regiao-main-vent-sys: #994CE6;
+  --ig-regiao-mainback: #F0AF94;
+  --ig-regiao-oven-hmi: #E029CE;
+  --ig-seguro: #57D46B;
+  --ig-seguro-borda: #57D46B;
+  --ig-seguro-fundo: #244229;
+  --ig-seguro-texto: #59D46C;
+}
+
+:root:not([data-theme="dark"])[data-daltonismo="sem-cor"] {
+  --ig-acento: #5C5C5C;
+  --ig-acento-claro: #ECECEC;
+  --ig-atencao: #606060;
+  --ig-atencao-borda: #606060;
+  --ig-atencao-fundo: #F5F6F7;
+  --ig-atencao-texto: #484948;
+  --ig-calor-0: #000000;
+  --ig-calor-1: #202020;
+  --ig-calor-2: #3A3A3A;
+  --ig-calor-3: #575757;
+  --ig-calor-4: #757575;
+  --ig-calor-5: #949494;
+  --ig-critico: #000000;
+  --ig-critico-borda: #000000;
+  --ig-critico-fundo: #F5F6F7;
+  --ig-critico-texto: #484948;
+  --ig-div-0: #000000;
+  --ig-div-1: #262626;
+  --ig-div-2: #484848;
+  --ig-div-3: #6D6D6D;
+  --ig-div-4: #949494;
+  --ig-primaria: #2B2B2B;
+  --ig-primaria-hover: #141414;
+  --ig-primaria-texto: #2B2B2B;
+  --ig-regiao-coil-temps: #000000;
+  --ig-regiao-ct-knobs: #1C1C1C;
+  --ig-regiao-ipc-comp: #313131;
+  --ig-regiao-ipc-cooling: #484848;
+  --ig-regiao-main-vent-sys: #606060;
+  --ig-regiao-mainback: #7A7A7A;
+  --ig-regiao-oven-hmi: #949494;
+  --ig-seguro: #313131;
+  --ig-seguro-borda: #313131;
+  --ig-seguro-fundo: #F5F6F7;
+  --ig-seguro-texto: #484948;
+  --ig-temp-0: #000000;
+  --ig-temp-1: #262626;
+  --ig-temp-2: #484848;
+  --ig-temp-3: #6D6D6D;
+  --ig-temp-4: #949494;
+}
+
+:root[data-theme="dark"][data-daltonismo="sem-cor"] {
+  --ig-acento: #757575;
+  --ig-acento-claro: #2E2E2E;
+  --ig-atencao: #989898;
+  --ig-atencao-borda: #989898;
+  --ig-atencao-fundo: #22272E;
+  --ig-atencao-texto: #F2F4F6;
+  --ig-calor-0: #FFFFFF;
+  --ig-calor-1: #DFDFDF;
+  --ig-calor-2: #C0C0C0;
+  --ig-calor-3: #A2A2A2;
+  --ig-calor-4: #858585;
+  --ig-calor-5: #696969;
+  --ig-critico: #FFFFFF;
+  --ig-critico-borda: #FFFFFF;
+  --ig-critico-fundo: #22272E;
+  --ig-critico-texto: #F2F4F6;
+  --ig-div-0: #FFFFFF;
+  --ig-div-1: #D7D7D7;
+  --ig-div-2: #B1B1B1;
+  --ig-div-3: #8C8C8C;
+  --ig-div-4: #696969;
+  --ig-primaria: #6B6B6B;
+  --ig-primaria-hover: #5E5E5E;
+  --ig-primaria-texto: #C0C0C0;
+  --ig-regiao-coil-temps: #FFFFFF;
+  --ig-regiao-ct-knobs: #E4E4E4;
+  --ig-regiao-ipc-comp: #CACACA;
+  --ig-regiao-ipc-cooling: #B1B1B1;
+  --ig-regiao-main-vent-sys: #989898;
+  --ig-regiao-mainback: #808080;
+  --ig-regiao-oven-hmi: #696969;
+  --ig-seguro: #CACACA;
+  --ig-seguro-borda: #CACACA;
+  --ig-seguro-fundo: #22272E;
+  --ig-seguro-texto: #F2F4F6;
+  --ig-temp-0: #FFFFFF;
+  --ig-temp-1: #D7D7D7;
+  --ig-temp-2: #B1B1B1;
+  --ig-temp-3: #8C8C8C;
+  --ig-temp-4: #696969;
+}
